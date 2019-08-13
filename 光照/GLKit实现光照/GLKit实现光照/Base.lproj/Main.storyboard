@@ -24,6 +24,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neP-J2-MIr">
+                                <rect key="frame" x="42" y="79" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-0.5" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Foq-v8-L6O">
                                 <rect key="frame" x="148" y="123.5" width="118" height="31"/>
                                 <constraints>
@@ -34,12 +40,22 @@
                                     <action selector="changeCenterVertexHeight:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZLJ-sh-o8W"/>
                                 </connections>
                             </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EV1-Nh-3iR">
+                                <rect key="frame" x="107" y="74" width="51" height="31"/>
+                                <connections>
+                                    <action selector="takeShouldDrawNormals:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZAI-6Z-j31"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Foq-v8-L6O" firstAttribute="centerY" secondItem="EOq-iW-DTh" secondAttribute="centerY" id="1bG-OV-ebi"/>
+                            <constraint firstItem="neP-J2-MIr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="BJ1-3b-gbA"/>
                             <constraint firstItem="Foq-v8-L6O" firstAttribute="leading" secondItem="EOq-iW-DTh" secondAttribute="trailing" constant="29" id="Bcv-Zn-4b5"/>
+                            <constraint firstItem="EV1-Nh-3iR" firstAttribute="centerY" secondItem="neP-J2-MIr" secondAttribute="centerY" id="K20-hO-VKu"/>
                             <constraint firstItem="EOq-iW-DTh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="aom-gj-D4n"/>
+                            <constraint firstItem="EV1-Nh-3iR" firstAttribute="leading" secondItem="neP-J2-MIr" secondAttribute="trailing" constant="30" id="cWS-vd-aXu"/>
+                            <constraint firstItem="neP-J2-MIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="lly-Gn-nlm"/>
                             <constraint firstItem="EOq-iW-DTh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="mTB-Rt-Lfb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,6 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-204.34782608695653" y="102.45535714285714"/>
         </scene>
     </scenes>
 </document>
