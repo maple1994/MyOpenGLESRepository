@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern const GLKVector3 MPDefualtGravity;
+extern const GLKVector3 MPDefaultGravity;
 
 @interface MPPointParticleEffect : NSObject
 /// 重力
@@ -34,12 +34,12 @@ extern const GLKVector3 MPDefualtGravity;
  @param aSapn 跨度
  @param aDuration 时长
  */
-- (void)addParticleAtPosition: (GLKVector3)aPosition
-        velocity: (GLKVector3)aVelocity
-        force: (GLKVector3)aForce
-        size: (float)aSize
-        lifeSpanSecond: (NSTimeInterval)aSapn
-        fadeDuration: (NSTimeInterval)aDuration;
+- (void)addParticleAtPosition:(GLKVector3)aPosition
+                     velocity:(GLKVector3)aVelocity
+                        force:(GLKVector3)aForce
+                         size:(float)aSize
+              lifeSpanSeconds:(NSTimeInterval)aSpan
+          fadeDurationSeconds:(NSTimeInterval)aDuration;
 
 /// 准备绘制
 - (void)prepareToDraw;

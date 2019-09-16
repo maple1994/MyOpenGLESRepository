@@ -17,6 +17,7 @@
 		F57673CB2305670B0033148B /* MPPointParticleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F57673CA2305670B0033148B /* MPPointParticleShader.fsh */; };
 		F57673CE23056B800033148B /* MPVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F57673CD23056B800033148B /* MPVertexAttribArrayBuffer.m */; };
 		F57673D1230579A20033148B /* MPPointParticleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = F57673D0230579A20033148B /* MPPointParticleEffect.m */; };
+		F598505A23058D0600EF52D2 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = F598505923058D0500EF52D2 /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F57673CD23056B800033148B /* MPVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		F57673CF230579A20033148B /* MPPointParticleEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPointParticleEffect.h; sourceTree = "<group>"; };
 		F57673D0230579A20033148B /* MPPointParticleEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPointParticleEffect.m; sourceTree = "<group>"; };
+		F598505923058D0500EF52D2 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = Assets.xcassets/ball.imageset/ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		F57673B02305594C0033148B /* 粒子系统ByOpenGLES */ = {
 			isa = PBXGroup;
 			children = (
+				F598505923058D0500EF52D2 /* ball.png */,
 				F57673C7230566D90033148B /* Kit */,
 				F57673B12305594C0033148B /* AppDelegate.h */,
 				F57673B22305594C0033148B /* AppDelegate.m */,
@@ -154,6 +157,7 @@
 			files = (
 				F57673BE2305594E0033148B /* LaunchScreen.storyboard in Resources */,
 				F57673BB2305594E0033148B /* Assets.xcassets in Resources */,
+				F598505A23058D0600EF52D2 /* ball.png in Resources */,
 				F57673C9230566F60033148B /* MPPointParticleShader.vsh in Resources */,
 				F57673CB2305670B0033148B /* MPPointParticleShader.fsh in Resources */,
 				F57673B92305594C0033148B /* Main.storyboard in Resources */,
